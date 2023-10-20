@@ -20,11 +20,13 @@ class _QuoteListState extends State<QuoteList> {
   ];
 
   Widget quoteTemplate(quote) {
+    // format for each quote
     return Card(
-      margin: const EdgeInsets.fromLTRB(16.0, 100.0, 16.0, 0),
+      margin: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(12.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Text(
               quote.text,
